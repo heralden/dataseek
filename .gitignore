@@ -1,0 +1,7 @@
+/.lsp
+/node_modules/
+/.cpcache/
+/resources/public/js/
+/resources/public/css/
+/.nrepl-port
+/cljs-test-runner-out/

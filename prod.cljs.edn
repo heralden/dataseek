@@ -1,0 +1,7 @@
+{:main dataseek.core
+ :optimizations :advanced
+ :pretty-print false
+ :source-map "resources/public/js/main.js.map"
+ :asset-path "/js/prod"
+ :output-to "resources/public/js/main.js"
+ :output-dir "resources/public/js/prod"}
