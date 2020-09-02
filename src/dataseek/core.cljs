@@ -1,19 +1,21 @@
 (ns ^:figwheel-hooks dataseek.core
   (:require [reagent.dom :as rdom]
             [re-frame.core :as rf]
-            [goog.dom :as gdom]))
+            [goog.dom :as gdom]
+            [dataseek.components.icons :refer [icons]]
+            [dataseek.ui.databases :as databases]
+            [dataseek.styles :as styles]))
 
 (rf/reg-event-db
   :initialize
   (fn [_ _]
     {}))
 
-(defn greet [target]
-  (str "Hello, " target "!"))
-
 (defn ui []
-  [:div
-   [:h1.text-red-600 (greet "World")]])
+  [:div.bg-gray-200.h-screen
+   {:class [styles/body-text]}
+   [icons]
+   [:main.container.mx-auto [databases/main]]])
 
 (defn render
   []
